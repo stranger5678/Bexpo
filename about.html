@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            Background-color: #eaeaea;
+        }
+        
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0B0C10;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+     text-decoration: none; 
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px
+}
+.nav-links a.active,a:hover{
+    background: #45A29E;
+    transition: .5s;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 89%;
+        background-color: #212A31;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+        
+/*         .........Header-Section......... */
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 0.5rem 10rpx;
+            text-align: center;
+        }
+        
+        header h1{
+            Background-color : #124E66; 
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        h1, h2 {
+            margin-top: 0;
+        }
+        p {
+            text-align: left;
+            margin: 0.5rem 0;
+        }
+
+        /* About section */
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem 0;
+        }
+        .about-section img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .about-text {
+            flex: 1;
+            padding: 1rem;
+        }
+
+        /* Features section */
+        .features-section {
+            background: #f9f9f9;
+            padding: 2rem 0;
+        }
+        .features-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .features-section ul li {
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+        }
+        .features-section ul li img {
+            max-width: 50px;
+            margin-right: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        
+        footer div p{
+            text-align: center;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .about-section {
+                flex-direction: column;
+            }
+            .about-text {
+                text-align: center;
+            }
+        }
+        
+            /* Sections */
+        .section {
+            background: #D3D9D4;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .section h3 {
+            margin-top: 0;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+            }
+            .profile img {
+                height: auto;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+        <nav class="navbar">
+        <div class="logo">Business Expo</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="category.html">Category</a></li>    
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            
+        </ul>
+    </nav>
+    
+
+
+<header>
+    <h1>About Us</h1>
+</header>
+
+<div class="container">
+    <section class="about-section">
+        <div class="about-text">
+             <img src="mainLogo.jpg" alt="Expansion illustration">
+            <h2>About Our School Business Expo</h2>
+            <p>The School Business Expo is an exciting annual event that celebrates the creativity, innovation, and entrepreneurial spirit of our students. This interactive showcase brings together young entrepreneurs, local businesses, and the school community to highlight student-led projects, small business ideas, and collaborative ventures.
+
+The expo serves as a platform for students to display their business acumen, present innovative solutions, and gain real-world experience in pitching ideas to an audience. It also offers networking opportunities with local professionals and community leaders, fostering mentorship and future collaborations.
+
+From interactive booths to engaging presentations, the event provides a hands-on learning experience and promotes the importance of entrepreneurship in shaping the leaders of tomorrow. The School Business Expo is not just an event—it's a celebration of ambition, creativity, and the pursuit of excellence.</p>
+        </div>
+        <div>
+           
+        </div>
+    </section>
+
+        <!-- Students Section -->
+      <section class="section">
+        <h3>About Developer</h3>
+        <ul>
+            <li><strong>Developer Name</strong> - Vishwakarma Ankit R. </li>
+            
+            
+            <li><strong>Student</strong> - 12-A, Science-Gujrati Medium</li>
+            
+        </ul>
+    </section>
+    
+  
+</div>
+
+<footer>
+     <div>
+            <p>Copyright &copy; 2024 Krishan School Business Expo2.0</p>
+            <p>
+                Designed and Developed by Ankit Vishwakarma 
+            </p>
+        </div>
+</footer>
+
+
+<!-- ...........Script-Section............ -->
+<script>
+       const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+</script>
+
+
+</body>
+</html>

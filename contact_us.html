@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #D3D9D4;
+        }
+        
+        /* ...........Navigation Bar........... */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3d5a80;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+     text-decoration: none; 
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px
+}
+.nav-links a.active,a:hover{
+    background: #45A29E;
+    transition: .5s;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+         width: 89%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+        
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .contact-info, .social-media {
+            margin: 20px 0px;
+        }
+        .social-media a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            flex-direction: column
+        }
+        
+footer{
+    background: #333;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+        
+    </style>
+</head>
+<body>
+    
+                 <nav class="navbar">
+        <div class="logo">Business Expo</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="category.html">Category</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="contact_us.html">Contact Us</a></li>
+            
+        </ul>
+    </nav>
+
+
+<div class="container">
+    <h1>Contact Us</h1>
+
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Email: support@example.com</p>
+        <p>Phone: <a href="#">02766 297212</a>, <a href="#">9512351005</a></p>
+        <p>Address: At. Runi, Po. Mandotri, Patan-Unjha Highway, Patan-364245, Gujrat.</p>
+    </div>
+
+    <div class="social-media">
+        <h2>Follow Us on Social Media</h2>
+        
+       <a href="" target="_blank">Facebook</a>
+        <a href="https://youtube.com/@krishnaschoolpatan?si=WkO-z6njHzfe6nOa" target="_blank">YouTube</a>
+        <a href="" target="_blank">Instagram</a>
+        
+    </div>
+
+    </form>
+    
+    
+</div>
+
+    <footer>
+        <div>
+            <p>Copyright &copy; 2024 Krishan School Business Expo2.0</p>
+            <p>
+                Designed and Developed by Ankit Vishwakarma 
+            </p>
+        </div>
+    </footer>
+    
+      <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
