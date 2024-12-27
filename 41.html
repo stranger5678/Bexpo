@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Profile</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #98C1d9;
+        }
+        
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0B0C10;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+     text-decoration: none; 
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px
+}
+.nav-links a.active,a:hover{
+    background: #45A29E;
+    transition: .5s;
+}
+
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 89%;
+        background-color: #212A31;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+        
+/*         ..........Header-Section......... */
+        header {
+            background-color: #124E66;
+            color: White;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+        header h1 {
+            
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        /* Profile card */
+        .profile {
+            display: flex;
+            flex-wrap: wrap;
+            background: #3d5a80;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 2rem 0;
+        }
+        .profile img {
+            max-width: 100%;
+            object-fit: cover;
+        }
+        .profile-info {
+            flex: 1;
+            padding: 1.5rem;
+        }
+        .profile-info h2 {
+            margin: 0 0 0.5rem;
+        }
+        .profile-info p {
+            margin: 0.5rem 0;
+        }
+        .profile-info .tags {
+            margin-top: 1rem;
+        }
+        .profile-info .tags span {
+            display: inline-block;
+            background: #0073e6;
+            color: white;
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Sections */
+        .section {
+            background : #3d5a80;
+            color: white;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .section h3 {
+            margin-top: 0;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+            }
+            .profile img {
+                height: auto;
+            }
+        }
+        
+        footer{
+            background: #333;
+            padding: 20px 0;
+            color: #fff;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    
+        <nav class="navbar">
+        <div class="logo">Business Expo</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="category.html">Category</a></li>    
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            
+        </ul>
+    </nav>
+    
+     
+<header>
+    <h1>Shop Details</h1>
+</header>
+
+<div class="container">
+    <!-- Profile Card -->
+    <div class="profile">
+        <div>
+            <img src="2.jpg" alt="Profile Picture">
+        </div>
+        <div class="profile-info">
+            <h2>(41) SPICY WORLD CONE</h2>
+            
+            <p><strong>Shop Number : 41</strong>  </p>
+            <p><strong>Location:</strong> Krishna School</p>
+            
+            <p><strong>Item : </strong>  </p>
+            
+            <div class="tags">
+                <span>Cone</span>
+                
+                
+                
+                
+            </div>
+        </div>
+    </div>
+
+
+        <!-- Students Section -->
+      <section class="section">
+        <h2>Incharge : Khatri JhankiMam</h2>
+        <h3>Students Name</h3>
+           <ol type="1">
+            <li> JANAVI JETHABHAI</li>
+            <li>PRAJAPATI ANGEL KUNDANKUMAR</li>
+            <li>MODI ARCHI MITESHKUMAR</li>
+            <li>THAKKAR URVI PARESHKUMAR</li>
+            <li>PORADHIYA RIYA CHANDRESHKUMAR</li>
+            <li>THAKOR ARATI ARAVINDJI</li>
+           </ol>
+          <ul>
+            <li><strong>Class</strong> - 9(D)</li>
+            <li><strong>Medium</strong> - Gujarati </li>
+          </ul>
+    </section>
+    
+        <!-- About Section -->
+    <section class="section">
+        <h3>About Business</h3>
+        <p></p>
+    </section>
+
+    <!-- Item Section -->
+    <section class="section">
+        <h3>Prices</h3>
+        <ul>
+            <li>Cone - </li>
+            
+            
+            
+        </ul>
+    </section>
+</div>
+
+<footer>
+        <div>
+            <p>Copyright &copy; 2024 Krishan School Business Expo2.0</p>
+            <p>
+                Designed and Developed by Ankit Vishwakarma 
+            </p>
+        </div>
+    </footer>
+
+<!-- ...........Script-Section............ -->
+<script>
+       const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+</script>
+
+
+</body>
+</html>
